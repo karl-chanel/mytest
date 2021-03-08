@@ -53,6 +53,9 @@ public class cunt5 {
     }
     }
     class TaskQueue {
+        public static void main(String[] args) {
+            System.out.println("cdcdfvf");
+        }
         private final Lock lock = new ReentrantLock();
         private final Condition condition = lock.newCondition();
         private final Queue<String> queue = new LinkedList<>();
