@@ -15,6 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class cunt5 {
     public static void main(String[] args) throws InterruptedException {
+        System.out.println("ite a");
         var q = new TaskQueue();
         var ts = new ArrayList<Thread>();
         for (int i=0; i<5; i++) {
