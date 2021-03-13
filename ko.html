@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ko</title>
+    <script src="./jquery-3.5.1.js"></script>
+    <!--    <script src="ko.js" ></script>-->
+</head>
+<body>
+<h1 id="te">hello test!</h1>
+<ol id="test-list">
+    <li class="lang">Scheme</li>
+    <li class="lang">JavaScript</li>
+    <li class="lang">Python</li>
+    <li class="lang">Ruby</li>
+    <li class="lang">Haskell</li>
+</ol>
+<button>Change colors</button>
+<span></span>
+<div>gvthbthb</div>
+<div>gvthbthb</div>
+<div>gvthbthb</div>
+<div>gvthbthb</div>
+<div id="stop">Stop here</div>
+<div>rrrr</div>
+<div>rrrr</div>
+<div>rrrr</div>
+<script>
+    $("div").each(fun)
+    $("button").click(function () {
+    $("div").each(function (index) {
+        $(this).css("backgroundColor", "yellow");
+        if ($(this).is("#stop")) {
+            $("span").text("Stopped at div index #" + index);
+            return false;
+        }
+    });
+    _.map()
+});
+</script>
+
+
+<script>
+    var arr_list = Array.from(document.getElementById('test-list').children)
+    var arr_lang = Array.from(document.getElementsByClassName("lang"), item => item.innerText)
+    arr_lang.sort();
+    arr_list.map((x, i) => {
+        x.innerText = arr_lang[i]
+    })
+</script>
+</body>
+</html>
